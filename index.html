@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Dreams ☕</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fdf7f2;
+      color: #3b2f2f;
+    }
+    header {
+      background-color: #d4a373;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #d4a373, #b68c60);
+      color: white;
+      padding: 120px 20px;
+      border-radius: 0 0 50px 50px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .hero button {
+      background-color: #3b2f2f;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      transform: scale(1.1);
+      background-color: #5a4747;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+      padding: 30px 10px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card .icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #d4a373, #b68c60);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      color: #d4a373;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #3b2f2f;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">☕ Coffee Dreams</div>
+    <nav>
+      <a href="#home">Головна</a>
+      <a href="#shop">Магазин</a>
+      <a href="#about">Про нас</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Смак справжньої кави</h2>
+    <p>Найкраща кава з усього світу — у твоїй чашці ☕</p>
+    <button onclick="location.href='#shop'">Перейти в магазин</button>
+  </section>
+
+  <section id="shop">
+    <h2>Наші кавові пропозиції</h2>
+    <div class="products">
+      <div class="card">
+        <div class="icon">🌰</div>
+        <h3>Arabica Premium</h3>
+        <p>250 грн</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔥</div>
+        <h3>Colombian Dark</h3>
+        <p>230 грн</p>
+      </div>
+      <div class="card">
+        <div class="icon">🍫</div>
+        <h3>Espresso Mix</h3>
+        <p>210 грн</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Про нас</h2>
+    <p>Ми створили Coffee Dreams, щоб дарувати людям затишок, тепло і аромат справжньої кави. Кожне зерно обсмажене з любов’ю 💛</p>
+  </section>
+
+  <section id="contact">
+    <h2>Контакти</h2>
+    <p>📍 вул. Ароматна, 15, Київ</p>
+    <p>📞 +380 97 555 55 55</p>
+  </section>
+
+  <footer>
+    © 2025 Coffee Dreams. Всі права захищено.
+  </footer>
+</body>
+</html>
